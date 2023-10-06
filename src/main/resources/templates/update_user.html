@@ -16,11 +16,11 @@
             </p>
             <p>
                 <label th:for="firstName">First Name</label>
-                <input type="text" name="firstName" th:id="firstName" th:value="${user.getFirstName()}"/>
+                <input type="text" name="firstName" th:id="firstName" th:value="${user.getFirstName()}" required pattern="[a-zA-Z]*"/>
             </p>
             <p>
                 <label th:for="lastName">Last Name</label>
-                <input type="text" name="lastName" th:id="lastName" th:value="${user.getLastName()}"><br/>
+                <input type="text" name="lastName" th:id="lastName" th:value="${user.getLastName()}" required pattern="[a-zA-Z]*"><br/>
             </p>
         </fieldset>
         <br>
